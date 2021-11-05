@@ -37,6 +37,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
     height: var(--altura-menu);
     padding: var(--padding-vertical-menu);
     background-image: var(--cor-principal-menu);
@@ -77,55 +79,11 @@ li{
     cursor: pointer;
 }
 
-/* =================== RESPONSIVIDADE =================== */
-@media screen and (max-width: 600px) {
-    .bx-menu-open{
-        display: block;
-    }
-
-    .itens-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: 8rem;
-        left: -100%;
-        padding: 1rem;        
-        background-image: var(--cor-menu-mobile);
-        transition: linear .5s;
-        overflow-y: auto;
-    }
-
-    li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3rem;
-        width: 100%;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
-    }
-    .item{
-        width: 100%;
-        text-align: center;
-    }
-
-    .bx-menu-open:hover{
-        height: 3.5rem ;
-        transition: .5s;
-    }
-
-    #check:checked ~ .itens-menu{ /* Se 'checked', ativa menu mobile!*/
-        left: 0;
-    }
+/* =================== ESTILIZAÇÃO CONTEÚDO =================== */
+main{
+    padding: 8rem 0;
+    height: 100vh;
 }
-
-
-
-/* ================================================= MAIN ============================= */
-
 div,html {
 
     height: 100%;
@@ -170,14 +128,12 @@ flex-direction: column;
 #subtitulo01{
     display: grid;       
     grid-template-columns: .85fr 1fr 1fr;
-   
     color: azure;
     font-size: 15px;
-   
     margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-     font-family: 'Lucida Sans';
+    font-family: 'Lucida Sans';
 }
 
 p1 {text-shadow: 0.05em 0.05em rgb(0, 0, 0)}
@@ -215,3 +171,80 @@ margin-left: 100px;
 height: 60vh;
 
 }
+
+
+/* =================== ESTILIZAÇÃO RODAPÉ =================== */
+
+.footer{
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: #444140;
+}
+
+.container-img-footer{
+    height: 100%;
+}
+
+
+.paragrafo-footer{
+    color: white;
+}
+
+#logo-footer{
+    height: 100%;
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media screen and (max-width: 600px) {
+    .bx-menu-open{
+        display: block;
+    }
+
+    .itens-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        top: 8rem;
+        left: -110%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 8rem;
+        left: -100%;
+        padding: 1rem;        
+        background-image: var(--cor-menu-mobile);
+        transition: linear .5s;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bx-menu-open:hover{
+        height: 3.5rem ;
+        transition: .5s;
+    }
+
+    #check:checked ~ .itens-menu{ /* Se 'checked', ativa menu mobile!*/
+        left: 0;
+    }
+}
+
