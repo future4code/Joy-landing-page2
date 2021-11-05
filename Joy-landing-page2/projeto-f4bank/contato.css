@@ -36,13 +36,11 @@
 /* Estilização do conteudo */
 
 .container-contato h2 {
-  /* text-align: center; */
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .container-contato p {
-  /* text-align: center; */
   font-size: 18px;
   margin-bottom: 10px;
 }
