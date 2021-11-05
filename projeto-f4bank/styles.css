@@ -1,0 +1,217 @@
+/* ===================================== GOOGLE FONTS ===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ===================================== VARIÁVEIS ===================================== */
+:root{
+    /* =================== CORES =================== */
+    --cor-principal-menu: linear-gradient(90deg, #F2884B 30%, #F2AC57, #F29F80);;
+    --cor-menu-mobile: linear-gradient(90deg, #F2884B 30%, #F2AC57, #F29F80);
+    --cor-fonte-menu: white;
+    --cor-hover-menu: #8b8b8b;
+
+    /* =================== TIPOGRAFIA =================== */
+    --font-body: 'Roboto', sans-serif;
+
+    --altura-menu: 8rem;
+    --padding-vertical-menu: 0 2rem;
+    --padding-itens-menu: .5rem;
+    --gap-itens-menu-desktop: .5rem;
+    --border-radius-itens-menu: 1rem;
+    --transicao-hover-itens-menu: 1s;
+    --tamanho-logo-menu: 100%;
+    --icone-btn-mobile: 3rem;
+}
+
+/* =================== BASE =================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-body);
+}
+
+/* =================== ESTILIZAÇÃO MENU =================== */
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--altura-menu);
+    padding: var(--padding-vertical-menu);
+    background-image: var(--cor-principal-menu);
+}
+
+.itens-menu{
+    display: flex;
+    gap: var(--gap-itens-menu-desktop);
+}
+
+li{
+    list-style: none;
+}
+
+.item{
+    text-decoration: none;
+    padding: var(--padding-itens-menu);
+    color: var(--cor-fonte-menu);
+    border-radius: var(--border-radius-itens-menu);
+}
+
+.item:hover{
+    background-color: var(--cor-hover-menu);
+    transition: var(--transicao-hover-itens-menu);
+}
+
+#logo-menu{
+    height: var(--tamanho-logo-menu);
+}
+
+#check{
+    display: none;
+}
+
+.bx-menu-open{
+    display: none;
+    height: var(--icone-btn-mobile);
+    cursor: pointer;
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media screen and (max-width: 600px) {
+    .bx-menu-open{
+        display: block;
+    }
+
+    .itens-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 8rem;
+        left: -100%;
+        padding: 1rem;        
+        background-image: var(--cor-menu-mobile);
+        transition: linear .5s;
+        overflow-y: auto;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bx-menu-open:hover{
+        height: 3.5rem ;
+        transition: .5s;
+    }
+
+    #check:checked ~ .itens-menu{ /* Se 'checked', ativa menu mobile!*/
+        left: 0;
+    }
+}
+
+
+
+/* ================================================= MAIN ============================= */
+
+div,html {
+
+    height: 100%;
+    margin: 0
+}
+
+
+.bloco-container{
+
+display: flex;
+flex-direction: column;
+
+} 
+
+.container01 {
+
+
+    background-image: url("img/imageminicial.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150vh;
+  
+    
+
+}
+
+
+#titulo-container1 {
+       
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    color: azure;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+     font-family: 'Lucida Sans';
+}
+
+#subtitulo01{
+    display: grid;       
+    grid-template-columns: .85fr 1fr 1fr;
+   
+    color: azure;
+    font-size: 15px;
+   
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+     font-family: 'Lucida Sans';
+}
+
+p1 {text-shadow: 0.05em 0.05em rgb(0, 0, 0)}
+
+
+
+.container02 {
+display:grid ;
+grid-template-columns: 1fr 1fr;
+background-color : rgb(255, 255, 255);
+margin-left: 100px;
+margin-top: -110px; 
+}
+
+p2{
+ 
+    margin-top: 100px;
+   margin-right: 100px; 
+   text-align:justify;
+
+}
+
+.container03 {
+
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color : rgb(255, 255, 255);
+   
+}
+
+#cartoes{
+
+display: grid;
+margin-left: 100px;
+height: 60vh;
+
+}
