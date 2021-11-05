@@ -1,0 +1,65 @@
+/* Container conteudo contato */
+
+.container-contato {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* Botão e background para abrir conta digital e o formulario */
+.conta-digital {
+  background-image: url(img/f4bank02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conta-digital h1 {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.btn-conta-digital {
+  padding: 15px;
+  color: #fff;
+  background-color: #ff7a00;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilização do conteudo */
+
+.container-contato h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-contato p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email {
+  margin-top: 60px;
+  max-width: 300px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.telefone {
+  margin-top: 60px;
+  max-width: 300px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.sociais {
+  margin-top: 60px;
+  max-width: 300px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
