@@ -20,7 +20,6 @@
     --transicao-hover-itens-menu: 1s;
     --tamanho-logo-menu: 100%;
     --icone-btn-mobile: 3rem;
-
 }
 
 /* =================== BASE =================== */
@@ -79,11 +78,100 @@ li{
     height: var(--icone-btn-mobile);
     cursor: pointer;
 }
+
 /* =================== ESTILIZAÇÃO CONTEÚDO =================== */
 main{
     padding: 8rem 0;
     height: 100vh;
 }
+div,html {
+
+    height: 100%;
+    margin: 0
+}
+
+
+.bloco-container{
+
+display: flex;
+flex-direction: column;
+
+} 
+
+.container01 {
+
+
+    background-image: url("img/imageminicial.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150vh;
+  
+    
+
+}
+
+
+#titulo-container1 {
+       
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    color: azure;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+     font-family: 'Lucida Sans';
+}
+
+#subtitulo01{
+    display: grid;       
+    grid-template-columns: .85fr 1fr 1fr;
+    color: azure;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Lucida Sans';
+}
+
+p1 {text-shadow: 0.05em 0.05em rgb(0, 0, 0)}
+
+
+
+.container02 {
+display:grid ;
+grid-template-columns: 1fr 1fr;
+background-color : rgb(255, 255, 255);
+margin-left: 100px;
+margin-top: -110px; 
+}
+
+p2{
+ 
+    margin-top: 100px;
+   margin-right: 100px; 
+   text-align:justify;
+
+}
+
+.container03 {
+
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color : rgb(255, 255, 255);
+   
+}
+
+#cartoes{
+
+display: grid;
+margin-left: 100px;
+height: 60vh;
+
+}
+
 
 /* =================== ESTILIZAÇÃO RODAPÉ =================== */
 
@@ -109,8 +197,6 @@ main{
     height: 100%;
 }
 
-
-
 /* =================== RESPONSIVIDADE =================== */
 @media screen and (max-width: 600px) {
     .bx-menu-open{
@@ -127,6 +213,11 @@ main{
         height: calc(100vh - 8rem);
         top: 8rem;
         left: -110%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 8rem;
+        left: -100%;
         padding: 1rem;        
         background-image: var(--cor-menu-mobile);
         transition: linear .5s;
@@ -156,3 +247,4 @@ main{
         left: 0;
     }
 }
+
