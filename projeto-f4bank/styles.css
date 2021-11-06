@@ -84,19 +84,19 @@ main{
     padding: 8rem 0;
     height: 100vh;
 }
-div,html {
+/* div,html {
 
     height: 100%;
     margin: 0
-}
+} */
 
 
-.bloco-container{
+/* .bloco-container{
 
 display: flex;
 flex-direction: column;
 
-} 
+}  */
 
 .container01 {
 
@@ -104,73 +104,143 @@ flex-direction: column;
     background-image: url("img/imageminicial.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 150vh;
-  
+    height: 100vh;
+    margin-top: 0px;
     
 
 }
 
 
-#titulo-container1 {
+
+#titulo-container01 {
        
 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
+    display: flex;
+    
     color: azure;
-    font-size: 30px;
-    padding-top: 60px;
-    padding-left: 50px;
-    padding-right: 50px;
-     font-family: 'Lucida Sans';
-}
-
-#subtitulo01{
-    display: grid;       
-    grid-template-columns: .85fr 1fr 1fr;
-    color: azure;
-    font-size: 15px;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    font-size: 43px;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 900px;
     font-family: 'Lucida Sans';
 }
 
-p1 {text-shadow: 0.05em 0.05em rgb(0, 0, 0)}
+#subtitulo-container01{
+    display: flex;       
+    color: azure;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 950px;
+    font-family: 'Lucida Sans';
+}
+
+#lista-container01 {
+    display: flex;       
+    flex-direction: column; 
+    color: azure;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 900px;
+    font-family: 'Lucida Sans';
+}
+
+
 
 
 
 .container02 {
 display:grid ;
 grid-template-columns: 1fr 1fr;
-background-color : rgb(255, 255, 255);
-margin-left: 100px;
-margin-top: -110px; 
+background-color: #bbbbba;
+height: 100vh;
+
 }
 
-p2{
- 
-    margin-top: 100px;
-   margin-right: 100px; 
-   text-align:justify;
+
+#imagem-container02{
+
+
+margin-top:85px;
+margin-left: 50px;
+
+}
+
+#subtitulo-container02 {
+        
+    color: azure;
+    font-size: 17px;
+    margin-top: 50px;
+
+    margin-right: 100px;
+    font-family: 'Lucida Sans';
+}
+
+
+
+#lista-container02 {
+        
+    
+    color: azure;
+    font-size: 17px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: flex;       
+    flex-direction: column;
+    margin-top: -420px;
+    margin-left: 10px;
+    margin-right: 50px;
+    font-family: 'Lucida Sans';
+}
+#solicitar-cartao{
+
+    font-size: 17px;
+    margin-top: 50px;
+margin-right: 50px;
+    margin-left: 180px;
+    font-family: 'Lucida Sans';
+
+    }
+
+#heart {
+
+margin-left: -5px;
 
 }
 
 .container03 {
 
-    display:grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color : rgb(255, 255, 255);
+    background-image: url("img/avôs.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin-top: 0px;
+   
    
 }
+#titulo-container03 {
+       
 
-#cartoes{
-
-display: grid;
-margin-left: 100px;
-height: 60vh;
-
+    display: flex;
+    margin-top:-200px;
+    color: azure;
+    font-size: 25px;
+  
+    margin-left: 70px;
+    margin-right: 900px;
+    font-family: 'Lucida Sans';
 }
+
+#imagem-container03{
+
+
+    margin-top:-100px;
+    margin-left: 20px;
+    margin-right: 200px;
+    
+    }
+
 
 
 /* =================== ESTILIZAÇÃO RODAPÉ =================== */
