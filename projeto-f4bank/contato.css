@@ -21,6 +21,7 @@
 }
 
 .conta-digital h1 {
+  font-size: 2em;
   margin-bottom: 40px;
   color: #fff;
 }
@@ -145,6 +146,10 @@ legend {
 
 /* Estilização do conteudo */
 
+.container-contato {
+  margin-bottom: 20px;
+}
+
 .container-contato h2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -172,4 +177,18 @@ legend {
   margin-top: 60px;
   max-width: 300px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#email-contato {
+  display: inline-block;
+  color: #ff7a00;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1.125em;
+}
+
+#telefone-contato {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.125em;
 }
