@@ -32,7 +32,7 @@
   color: #fff;
   background-color: #ff7a00;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1em;
   cursor: pointer;
   border: none;
 }
@@ -151,7 +151,7 @@ legend {
 }
 
 .container-contato p {
-  font-size: 18px;
+  font-size: 1.125em;
   margin-bottom: 10px;
 }
 
