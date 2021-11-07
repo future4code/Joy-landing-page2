@@ -22,15 +22,18 @@
                     <li><a class="item 1" href="index.html">HOME</a></li>
                     <li><a class="item 2" href="#">SERVIÇOS</a></li>
                     <li><a class="item 3" href="#">PERGUNTAS</a></li>
-                    <li><a class="item 4" href="#">CONTATO</a></li>
+                    <li><a class="item 4" href="contato.html">CONTATO</a></li>
                 </ul>      
             </div>
         </nav> 
     </header>
     <main>
         <div class="conta-digital">
+            
             <h1>Abra sua conta digital agora mesmo!</h1>
             <button class="btn-conta-digital">Abra a sua conta</button>
+
+
         </div>
         <div class="container-contato">
             <div class="email">
@@ -51,23 +54,76 @@
                 <a href=""><img src="" alt=""></a>
             </div>
         </div>
+
+
     </main>
     <footer>
         
     </footer>
+
+
+    <div class="modal">
+        <div id="modal" class="box">
+            <form action="">
+                <fieldset>
+                    <button class="fechar">x</button>
+                    <legend><b>Abra agora sua Conta Digital<b></legend>
+                        <br>
+                    <div class="input">
+                        <input type="text" name="nome" id="nome" class="inputUsuario" required>
+                        <label for="nome" class="label-contato">Nome completo</label>
+                    </div>
+                    <br><br>
+                    
+                    
+                    <div class="input">
+                        <input type="text" name="email" id="email" class="inputUsuario" required>
+                        <label for="nome" class="label-contato">Email</label>
+                    </div>
+                    <br><br>
+
+
+                    <div class="input">
+                        <input type="tel" name="telefone" id="telefone" class="inputUsuario" required>
+                        <label for="nome" class="label-contato">Telefone</label>
+                    </div>
+                    <br><br>
+
+
+                        <label for="nome" ><b>Data de nascimento</b></label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    <br><br>
+
+
+                    <div class="input">
+                        <input type="text" name="telefone" id="telefone" class="inputUsuario" required>
+                        <label for="nome" class="label-contato">CPF</label>
+                    </div>
+                    <br><br>
+
+                    
+                    <input type="submit" name="submit" id="submit">
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function iniciaModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('mostrar')
+            modal.addEventListener('click', (e) => {
+                if(e.target.className ==='fechar'){
+                    modal.classList.remove('mostrar');
+                }
+            });
+        }
+        const botao = document.querySelector('.btn-conta-digital');
+        botao.addEventListener('click', () => iniciaModal('modal'));
+        
+    </script>
+
 </body>
 </html>
-
-
-<!-- <div class="formulario">
-            <form>
-                <h2>Entre em contato com a gente</h2>
-                <label>Nome:</label><br>
-                <input type="text" id="name" name="nome"><br>
-                <label>Email:</label><br>
-                <input type="email" id="name" name="email"><br>
-                <label>Mensagem:</label><br>
-                <textarea type="text" id="name" name="text"></textarea> <br>
-                <button class="btn">Enviar</button>
-            </form>
-        </div> -->
