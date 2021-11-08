@@ -6,7 +6,7 @@ Projeto desenvolvido em equipe, durante o curso de desenvolvedor web fullstack n
 Estruturalmente a página principal do site  está dividida em 3 seções, seguindo a semântica  do HTML5 e   fazendo uso de tags e divs. A  ela está linkada uma segunda página denominada contato.
 Autoria: Laís Medrado, Leonardo Silva  e Luciano Ribeiro.
 
-**Link do surge:**
+**Link do surge:** spiffy-way.surge.sh
  
 **Funcionalidades da aplicação:**  landing-page e Cadastro de usuário
  
