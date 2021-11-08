@@ -44,6 +44,7 @@
     height: var(--altura-menu);
     padding: var(--padding-vertical-menu);
     background-image: var(--cor-principal-menu);
+    z-index: 20;
 }
 
 .itens-menu{
@@ -378,3 +379,58 @@ svg:hover path{
 
 }
 
+/* Solicitando cartão */
+
+.solicitar-conta {
+    top: 100px;
+    right: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 380px;
+    height: 344px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .solicitar-conta h2 {
+    margin-top: 50px;
+    color: #fff;
+  }
+  
+  .solicitar-conta button {
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7a00;
+    color: #fff;
+    font-size: 1.125em;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .solicitar-conta button:hover {
+    background-color: #b15500;
+  }
+  
+  .solicitar-conta::before {
+    position: relative;
+    top: 193px;
+    right: -120px;
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid #fff;
+    border-top: 0.2em solid #fff;
+    transform: rotate(45deg);
+    margin-right: 0.5em;
+  }
+
+  @media screen and (max-width: 800px){
+      .solicitar-conta{
+          display: none;
+      }
+  }
