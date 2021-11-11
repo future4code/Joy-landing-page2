@@ -1,0 +1,436 @@
+/* ===================================== GOOGLE FONTS ===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ===================================== VARIÁVEIS ===================================== */
+:root{
+    /* =================== CORES =================== */
+    --cor-principal-menu: linear-gradient(90deg, #F2884B 30%, #F2AC57, #F29F80);;
+    --cor-menu-mobile: linear-gradient(90deg, #F2884B 30%, #F2AC57, #F29F80);
+    --cor-fonte-menu: white;
+    --cor-hover-menu: #444140;
+
+    /* =================== TIPOGRAFIA =================== */
+    --font-body: 'Roboto', sans-serif;
+
+    --altura-menu: 4rem;
+    --padding-vertical-menu: 0 2rem;
+    --padding-itens-menu: .5rem;
+    --gap-itens-menu-desktop: .5rem;
+    --border-radius-itens-menu: 1rem;
+    --transicao-hover-itens-menu: 1s;
+    --tamanho-logo-menu: 100%;
+    --icone-btn-mobile: 3rem;
+}
+
+/* =================== BASE =================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+}
+
+/* =================== ESTILIZAÇÃO MENU =================== */
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: var(--altura-menu);
+    padding: var(--padding-vertical-menu);
+    background-image: var(--cor-principal-menu);
+    z-index: 20;
+}
+
+.itens-menu{
+    display: flex;
+    gap: var(--gap-itens-menu-desktop);
+}
+
+#lista-menu{
+    list-style: none;
+}
+
+.item{
+    text-decoration: none;
+    padding: var(--padding-itens-menu);
+    color: var(--cor-fonte-menu);
+    border-radius: var(--border-radius-itens-menu);
+}
+
+.item:hover{
+    background-color: var(--cor-hover-menu);
+    transition: var(--transicao-hover-itens-menu);
+}
+
+#logo-menu{
+    height: var(--tamanho-logo-menu);
+}
+
+#check{
+    display: none;
+}
+
+.bx-menu-open{
+    display: none;
+    height: var(--icone-btn-mobile);
+    cursor: pointer;
+}
+
+/* =================== ESTILIZAÇÃO CONTEÚDO =================== */
+.container-main{
+    display: flex;
+    flex-direction: column;
+    padding: var(--altura-menu) 0 0 0;
+    height: 100%;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+
+/* =================== PRIMEIRA SEÇÃO =================== */
+
+.primeira-secao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: azure;
+    background-image: url("img/menina\ com\ cartao\ sorriso.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.box-secao1{
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+}
+
+.titulo{
+    padding: 1em 1.6em;
+    max-width: 300px;
+}
+
+.subtitulo{
+    padding: .5em 2.3em;
+    max-width: 300px;
+}
+
+.lista{
+    padding: .5em 3.3em;
+    max-width: 300px;
+}
+
+/* =================== SEGUNDA SEÇÃO =================== */
+.segunda-secao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbbbba;
+    color: azure;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.box-img{
+    width: 50%;
+    height: 100%;
+}
+
+.box-textos{
+    width: 50%;
+    height: 100%;
+}
+
+.lista-secao2{
+    list-style: none;
+}
+
+.imagem-celular{
+    width: 100%;
+}
+
+/* =================== TERCEIRA SEÇÃO =================== */
+.terceira-secao{
+    width: 100%;
+    background-image: url("img/avôs.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box-secao3{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.imagem-container03{
+    height: 85%;
+}
+
+/* =================== ESTILIZAÇÃO RODAPÉ =================== */
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #444140;
+    color: azure;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-top: auto;
+    clear: both;    
+}
+
+.bloco1-footer{
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, .06);
+    padding-bottom: 1em;
+}
+
+.bloco2-footer{
+    padding: 1em;
+    align-self: center;
+}
+
+.lista-footer{
+    display: flex;
+}
+
+.bloco-lista{
+    list-style: none;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div ul li a:hover{
+    color: #F2884B;
+    transition: .2s;
+    
+}
+
+.bloco-texto1{
+    display: flex;
+    flex-direction: column;
+    /* width: 20vw; */
+    padding: 1rem 1rem;
+
+}
+
+
+.bloco-texto2{
+    display: flex;
+    flex-direction: column;
+    /* width: 20vw; */
+    padding: 1rem 1rem;
+}
+
+.bloco-texto3{
+    display: flex;
+    flex-direction: column;
+    /* width: 20vw; */
+    padding: 1rem 1rem;
+}
+
+.redes-sociais{
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+.redes-sociais a img:hover{
+    color:  #F2884B;
+    transition: .2s;
+}
+
+svg:hover path{
+    fill:  #F2884B;    
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media screen and (max-width: 800px) {
+    .bx-menu-open{
+        display: block;
+    }
+
+    .itens-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        top: 8rem;
+        left: -110%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: var(--altura-menu);
+        left: -100%;
+        padding: 1rem;        
+        background-image: var(--cor-menu-mobile);
+        transition: linear .5s;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    #lista-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bx-menu-open:hover{
+        height: 3.5rem ;
+        transition: .5s;
+    }
+
+    #check:checked ~ .itens-menu{ /* Se 'checked', ativa menu mobile!*/
+        left: 0;
+    }
+
+    /* =================== PRIMEIRA SEÇÃO =================== */
+
+    .primeira-secao{
+        background-image: url("img/imageminicial.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* =================== SEGUNDA SEÇÃO =================== */
+
+    .segunda-secao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .box-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box-secao2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-celular{
+        width: 90%;
+    }
+
+    /* =================== TERCEIRA SEÇÃO =================== */
+
+    .terceira-secao{
+        background-image: url("img/avôs.png");
+        background-repeat: no-repeat;
+        background-position:top ;
+        background-size: cover;
+    }
+
+    .imagem-container03{
+        height: 50%;
+    }
+
+    /* =================== RODAPÉ =================== */
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start  ;
+        background-color: #444140;
+        color: azure;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin-top: auto;
+        clear: both;    
+    }
+
+    .bloco1-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+}
+
+/* Solicitando cartão */
+
+.solicitar-conta {
+    top: 100px;
+    right: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 380px;
+    height: 344px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .solicitar-conta h2 {
+    margin-top: 50px;
+    color: #fff;
+  }
+  
+  .solicitar-conta button {
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7a00;
+    color: #fff;
+    font-size: 1.125em;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .solicitar-conta button:hover {
+    background-color: #b15500;
+  }
+  
+  .solicitar-conta::before {
+    position: relative;
+    top: 193px;
+    right: -120px;
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid #fff;
+    border-top: 0.2em solid #fff;
+    transform: rotate(45deg);
+    margin-right: 0.5em;
+  }
+
+  @media screen and (max-width: 800px){
+      .solicitar-conta{
+          display: none;
+      }
+  }
